@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../final-project/css/reset.css">
+    <link rel="stylesheet" href="../final-project/css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-------------------- navbar   ------------------------->
+    <header class="header-wrapper">
+        <nav class="navbar">
+            <div class="left-section">
+                <div class="logo">
+                    <span class="logo-text">
+                        Flex<span class="violet-letters">Acc</span>ounting
+                    </span>
+                </div>
+            </div>
+            <div class="nav-list-container">
+                <ul class="nav-list">
+                    <li><a href="#">ჩვენ შესახებ</a></li>
+                    <li><a href="#">რატომ ჩვენ</a></li>
+                    <li id="services">
+                        <a href="javascript:void(0)">ჩვენი სერვისები</a>
+                        <ul class="dropdown">
+                            <li><a href="#">საგადასახადო კონსულტაცია</a></li>
+                            <li><a href="#">ბურალტრული აღრიცხვა</a></li>
+                        </ul>
+                    </li>
+                   <li><a href="#"></a></li>
+                  <li><a href="#">კონტაქტი</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+  <!-------------------- first section  ------------------------->
+<section >
+    <div class="first-section-wrapper">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-content">
+              <h1>ბუღალტერია <br>& საგადასახადო კონსულტაცია</h1>
+              <div class="underline-part">
+              <div class="underline"></div>
+              <p>ჩვენ თქვენი საქმის საჭიროებიდან გამომდინარე, 
+                ვადგენთ თქვენს საქმეზე მორგებულ მომსახურებას, 
+                რაც იქნება გარანტი იმისა რომ  ზუსტად მიიღებთ იმას,
+                რაც თქვენ გჭირდებათ</p>
+              </div>
+           
+              <button onclick="findOutMore()">Find out more</button>
+            </div>
+          </div>
+          
+    </div>
+</section>
+<!-------------------- second section  ------------------------->
+<section >
+    <div class="second-section-wrapper">
+        <div class="second-card">
+            <div class="second-card-content">
+                <h1 class="second-section-header-text">საგადასახადო კონსულტაცია</h1>
+                <div class="read-more-container">
+                    <p id="short-text">
+                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
+                    </p>
+                    <div id="more-text" class="read-more-content">
+                      <p>საგადასახადო მხარეს და
+                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
+                    </div>
+                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
+                  </div>
+            
+            </div>
+          </div>
+
+          <div class="second-card">
+            <div class="second-card-content">
+                <h1 class="second-section-header-text">ბუღალტრული აღრიცხვა</h1>
+                <div class="read-more-container">
+                    <p id="short-text">
+                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
+                    </p>
+                    <div id="more-text" class="read-more-content">
+                      <p>საგადასახადო მხარეს და
+                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
+                    </div>
+                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
+                  </div>
+            
+            </div>
+          </div>
+
+          <div class="second-card">
+            <div class="second-card-content">
+                <h1 class="second-section-header-text">ფინანსური რეპორტინგი</h1>
+                <div class="read-more-container">
+                    <p id="short-text">
+                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
+                    </p>
+                    <div id="more-text" class="read-more-content">
+                      <p>საგადასახადო მხარეს და
+                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
+                    </div>
+                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
+                  </div>
+            
+            </div>
+          </div>
+    </div>
+</section>
+
+<!-------------------- button section  ------------------------->
+<section class="btn-section">
+<div class="contact-container">
+    <h2>მოგვწერეთ</h2>
+    <form id="contact-form">
+      <input type="text" class="form-control" placeholder="სახელი *" required>
+      <input type="text" class="form-control" placeholder="გვარი *" required>
+      <input type="email" class="form-control" placeholder="მეილი *" required>
+      <textarea class="form-control" rows="4" placeholder="შეტყობინება" required></textarea>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    <div class="footer">
+      <p>Address: თბილისი, ვაჟა–ფშაველას N23</p>
+      <p>ტელ: +995 599 24 86 02</p>
+      <p>Email:flex.accounting@gmail.com</p>
+    </div>
+  </div>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

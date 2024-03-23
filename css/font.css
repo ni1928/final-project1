@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Spinnaker';
+    src: url('../fonts/Spinnaker-Regular.eot');
+    src: url('../fonts/Spinnaker-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Spinnaker-Regular.woff2') format('woff2'),
+        url('../fonts/Spinnaker-Regular.woff') format('woff'),
+        url('../fonts/Spinnaker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Regencie Alt';
+    src: url('../font/RegencieLightAlt.eot');
+    src: url('../font/RegencieLightAlt.eot?#iefix') format('embedded-opentype'),
+        url('../font/RegencieLightAlt.woff2') format('woff2'),
+        url('../font/RegencieLightAlt.woff') format('woff'),
+        url('../font/RegencieLightAlt.ttf') format('truetype'),
+        url('../font/RegencieLightAlt.svg#RegencieLightAlt') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
