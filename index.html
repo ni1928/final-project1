@@ -12,16 +12,9 @@
 <body>
     <div class="container">
         <!-------------------- navbar   ------------------------->
+
     <header class="header-wrapper">
-      <div class="menu-icon">
-        <button id="burger-menu" onclick="toggleMenu()">
-          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            </svg></button>
-      </div>
-      
+    
         <nav class="navbar">
             <div class="left-section">
                 <div class="logo">
@@ -32,6 +25,7 @@
             </div>
             <div class="nav-list-container">
                 <ul class="nav-list">
+                    <li><a href="#">მთავარი გვერდი</a></li>
                     <li><a href="#">ჩვენ შესახებ</a></li>
                     <li><a href="#">რატომ ჩვენ</a></li>
                     <li id="services">
@@ -41,14 +35,21 @@
                             <li><a href="#">ბურალტრული აღრიცხვა</a></li>
                         </ul>
                     </li>
-                   <li><a href="#"></a></li>
                   <li><a href="#">კონტაქტი</a></li>
                 </ul>
-            </div>
-            </div>
+                    <button id="burger-menu" onclick="toggleMenu()">
+                      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        </svg></button>
+                  </div>
+          </div>
+        </div>
         </nav>
     </header>
   <!-------------------- first section  ------------------------->
+
 <section class="first-section" >
     <div class="first-section-wrapper">
         <div class="card">
@@ -70,6 +71,7 @@
     </div>
 </section>
 <!-------------------- second section  ------------------------->
+
 <section class="second-section" >
     <div class="second-section-wrapper">
       <div class="second-card">
@@ -86,8 +88,6 @@
           </div>
         </div>
       </div>
-      
-      
 
       <div class="second-card">
         <div class="second-card-content">
@@ -117,7 +117,6 @@
         </div>
       </div>
     </div>
-
 </section>
 
 <!-------------------- button section  ------------------------->
@@ -135,11 +134,11 @@
       <p>Address: თბილისი, ვაჟა–ფშაველას N23</p>
       <p>ტელ: +995 599 24 86 02</p>
       <p>Email:flex.accounting@gmail.com</p>
-    </div>
+      </div>
   </div>
 </section>
-</div>
 <script src="burger.js"></script>
 <script src="script.js"></script>
+</div>
 </body>
 </html>
