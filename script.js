@@ -1,46 +1,43 @@
-// This will toggle the dropdown when clicking on 'Our Services'
-document.getElementById('services').addEventListener('click', function(event) {
-    let dropdown = this.querySelector('.dropdown');
-
-    // This checks the current state and toggles it
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
-    } else {
-        dropdown.style.display = 'block';
-    }
-
-    // This stops the click from propagating to the document
-    // where it would be caught by the window.onclick handler
-    event.stopPropagation();
-});
-
-// find out more
-// This will close the dropdown if you click anywhere outside of it
-window.onclick = function(event) {
-  // It will only close if you click outside and not on the dropdown itself
-  if (!event.target.matches('#services, #services *')) {
-      let dropdowns = document.getElementsByClassName("dropdown");
-      for (let dropdown of dropdowns) {
-          dropdown.style.display = 'none';
-      }
-  }
-};
-
+`use strict`;
 
 function findOutMore() {
     window.location.href = 'https://myaccountant.ge/';
   }
 
-//   learn more about
-  function toggleReadMore() {
-    let moreText = document.getElementById("more-text");
-    let btnText = document.getElementById("read-more-btn");
+function readMore() {
+  window.location.href = 'https://myaccountant.ge/%e1%83%a9%e1%83%95%e1%83%94%e1%83%9c%e1%83%98-%e1%83%a1%e1%83%94%e1%83%a0%e1%83%95%e1%83%98%e1%83%a1%e1%83%94%e1%83%91%e1%83%98';
+}
 
-    if (moreText.style.display === "none") {
-      btnText.textContent = "Read Less";
-      moreText.style.display = "inline";
+// fetch
+document.getElementById('contact-form').onsubmit = function(event) {
+  event.preventDefault(); 
+
+  let formData = new FormData(event.target);
+
+  fetch('http://localhost:3000/contact', { 
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json(); 
     } else {
-      btnText.textContent = "Learn More";
-      moreText.style.display = "none";
+      throw new Error('Network response was not ok.');
     }
-  }
+  })
+  .then(data => {
+    console.log(data);
+    alert('Thank you for contacting us! We will get back to you soon.');
+  })
+  .catch(error => {
+    console.error('There has been a problem with your fetch operation:', error);
+  });
+};
+
+
+
+
+
+
+
+

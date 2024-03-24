@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../final-project/css/reset.css">
-    <link rel="stylesheet" href="../final-project/css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div class="container">
         <!-------------------- navbar   ------------------------->
     <header class="header-wrapper">
+      <div class="menu-icon">
+        <button id="burger-menu" onclick="toggleMenu()">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            </svg></button>
+      </div>
+      
         <nav class="navbar">
             <div class="left-section">
                 <div class="logo">
@@ -34,12 +44,12 @@
                    <li><a href="#"></a></li>
                   <li><a href="#">კონტაქტი</a></li>
                 </ul>
-              </div>
+            </div>
             </div>
         </nav>
     </header>
   <!-------------------- first section  ------------------------->
-<section >
+<section class="first-section" >
     <div class="first-section-wrapper">
         <div class="card">
             <div class="card-image"></div>
@@ -60,66 +70,61 @@
     </div>
 </section>
 <!-------------------- second section  ------------------------->
-<section >
+<section class="second-section" >
     <div class="second-section-wrapper">
-        <div class="second-card">
-            <div class="second-card-content">
-                <h1 class="second-section-header-text">საგადასახადო კონსულტაცია</h1>
-                <div class="read-more-container">
-                    <p id="short-text">
-                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
-                    </p>
-                    <div id="more-text" class="read-more-content">
-                      <p>საგადასახადო მხარეს და
-                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
-                    </div>
-                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
-                  </div>
+      <div class="second-card">
+        <div class="second-card-content">
+          <h1 class="second-section-header-text">საგადასახადო კონსულტაცია</h1>
+          <div class="read-more-container">
+            <p class="second-section-text-p">
+              საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
+              საგადასახადო მხარეს და
+              დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.
+            </p>
             
-            </div>
+            <button  class="readMore"onclick="readMore()">read more</button>
           </div>
+        </div>
+      </div>
+      
+      
 
-          <div class="second-card">
-            <div class="second-card-content">
-                <h1 class="second-section-header-text">ბუღალტრული აღრიცხვა</h1>
-                <div class="read-more-container">
-                    <p id="short-text">
-                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
-                    </p>
-                    <div id="more-text" class="read-more-content">
-                      <p>საგადასახადო მხარეს და
-                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
-                    </div>
-                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
-                  </div>
+      <div class="second-card">
+        <div class="second-card-content">
+          <h1 class="second-section-header-text">ბუღალტრული მომსახურება</h1>
+          <div class="read-more-container">
+            <p class="second-section-text-p">
+              ჩვენი საქმიანობაა სააღრიცხვო გადაწყვეტილება მივაწოდოთ
+               თავის საქმეში წარმატების უნარის მქონე პირებს.
+            </p>
             
-            </div>
-          </div>
+            <button  class="readMore"onclick="readMore()">read more</button>
+          </div> 
+        </div>
+      </div>
 
-          <div class="second-card">
-            <div class="second-card-content">
-                <h1 class="second-section-header-text">ფინანსური რეპორტინგი</h1>
-                <div class="read-more-container">
-                    <p id="short-text">
-                        საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
-                    </p>
-                    <div id="more-text" class="read-more-content">
-                      <p>საგადასახადო მხარეს და
-                        დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.</p>
-                    </div>
-                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Learn More</button>
-                  </div>
+      <div class="second-card">
+        <div class="second-card-content">
+          <h1 class="second-section-header-text">ფინანსური რეპორტინგი</h1>
+          <div class="read-more-container">
+            <p class="second-section-text-p">
+              ფინანსური მენეჯმენტის მთავარი ამოცანაა შეამციროს ხარჯები 
+              და გაზარდოს კომპანიის მომგებიანობა არსებული რესურსების პირობებში. 
+            </p>
             
-            </div>
+            <button  class="readMore"onclick="readMore()">read more</button>
           </div>
+        </div>
+      </div>
     </div>
+
 </section>
 
 <!-------------------- button section  ------------------------->
-<section class="btn-section">
+<section id="contact-form" class="footer-section">
 <div class="contact-container">
     <h2>მოგვწერეთ</h2>
-    <form id="contact-form">
+    <form>
       <input type="text" class="form-control" placeholder="სახელი *" required>
       <input type="text" class="form-control" placeholder="გვარი *" required>
       <input type="email" class="form-control" placeholder="მეილი *" required>
@@ -134,6 +139,7 @@
   </div>
 </section>
 </div>
+<script src="burger.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

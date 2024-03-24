@@ -1,25 +1,20 @@
 @font-face {
-    font-family: 'Spinnaker';
-    src: url('../fonts/Spinnaker-Regular.eot');
-    src: url('../fonts/Spinnaker-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Spinnaker-Regular.woff2') format('woff2'),
-        url('../fonts/Spinnaker-Regular.woff') format('woff'),
-        url('../fonts/Spinnaker-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'BPG Nostalgia Bold';
+    src: url('../fonts/bpg-nostalgia-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-nostalgia-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-nostalgia-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-nostalgia-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-nostalgia-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-nostalgia-bold-webfont.svg#bpg_nostalgiabold') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'Regencie Alt';
-    src: url('../font/RegencieLightAlt.eot');
-    src: url('../font/RegencieLightAlt.eot?#iefix') format('embedded-opentype'),
-        url('../font/RegencieLightAlt.woff2') format('woff2'),
-        url('../font/RegencieLightAlt.woff') format('woff'),
-        url('../font/RegencieLightAlt.ttf') format('truetype'),
-        url('../font/RegencieLightAlt.svg#RegencieLightAlt') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'BPG Algeti Compact';
+    src: url('../fonts/bpg-algeti-compact-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-algeti-compact-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-algeti-compact-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-algeti-compact-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-algeti-compact-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-algeti-compact-webfont.svg#bpg_algeti_compactregular') format('svg'); /* Legacy iOS */
 }
 
