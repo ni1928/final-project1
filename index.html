@@ -52,12 +52,15 @@
                         <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                         </svg></button>
                  </div> 
-                  <form  class="first-form" action="/search" method="get">
-                    <div class="search-form">
-                      <input  class="search" type="text" name="query" placeholder="ძებნა..." id="currencyInput" oninput="searchCurrencies()">
-                      <ul id="currencyList" class="dropdown-menu" style="display: none;"></ul>
-                     </div>
-                   </form>
+                 <div class="right-section">
+                  <div class="select-currency">
+                      <label id="currencies">გაცვლითი კურსი</label>
+                      <select name="currencies" id="select">
+                          <option class="chose-currency" value="">ვალუტის არჩევა</option>
+                      </select>
+                      <div class="error"></div>
+                  </div>
+              </div>
           </div>
         </nav>
     </header>

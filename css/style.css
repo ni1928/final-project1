@@ -28,21 +28,13 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 	overflow: hidden;
 }
 
 .left-section {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -69,28 +61,14 @@ body {
 	overflow: hidden;
 }
 .nav-list-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
 .nav-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	padding: 0;
-	margin: 0;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -117,7 +95,6 @@ body {
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	-webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
@@ -147,39 +124,30 @@ body {
 
 .right-section {
 	width: 184px;
-	display: -webkit-box;
-	display: -ms-flexbox;
+	height: 30%;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	background-color: #6b77e5;
-	padding: 10px;
 }
 
-.get-consulting-text {
-	color: white;
-	font-family: Cabin;
+.select-currency {
+	display: flex;
+	align-items: center;
+	margin-left: -30px;
+	margin-top: 10px;
+	color: #1a2b6d;
+	font-family: "BPG Nostalgia Bold";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
-	margin-bottom: 10px;
+}
+#currencies {
+margin: 10px 5px 0 0;
 }
 
-.first-form {
-	display: flex;
-}
-.search-form {
-	display: flex;
-	align-items: center;
-}
-.search {
-	border-radius: 20px;
+#select {
+	margin-left: 5px;
 }
 
 /* first section */
@@ -189,11 +157,7 @@ body {
 }
 
 .first-section-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-	-ms-flex-pack: end;
 	justify-content: end;
 	background-image: url(../images/image.png);
 	background-position: center;
@@ -210,11 +174,8 @@ body {
 	width: 40%;
 	height: 70%;
 	background: #f2f2f2;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	margin: 10px auto;
-	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
@@ -234,12 +195,7 @@ body {
 	margin-bottom: 0.5em;
 }
 .underline-part {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
 	flex-direction: row;
 }
 .underline {
@@ -269,8 +225,6 @@ button {
 	padding: 10px 20px;
 	text-transform: uppercase;
 	cursor: pointer;
-	-webkit-transition: background-color 0.3s ease;
-	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
 }
 
@@ -284,15 +238,8 @@ button:hover {
 	background-color: rgb(6, 6, 110);
 	height: 80%;
 	margin-top: 200px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
 	flex-direction: row;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -316,7 +263,6 @@ button:hover {
 	width: calc(100% - 20px);
 	height: calc(100% - 20px);
 	border: 5px solid #f2f2f2;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	pointer-events: none;
 	z-index: 1;
@@ -354,9 +300,8 @@ button:hover {
 .footer-section {
 	background-color: #1e2a47;
 	font-family: "BPG Algeti Compact";
-	margin-top: 250px;
-	height: auto;
-}
+	margin-top: 250px;NostalgiaBoldBPGAlgetiCompactBPGNostalgiaBoldBPGAlgetiCompactBPGAlgetiCompactBPGAlgetiCompactmargin-top
+	height: auto;heightheightheight
 .contact-container {
 	max-width: 600px;
 	height: 60%;
@@ -419,4 +364,5 @@ h2 {
 
 .footer p {
 	color: #bbc0c4;
+}
 }

@@ -86,3 +86,18 @@ function validateEmail(email) {
 		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
 }
+
+// information from server
+fetch('https://nbg.gov.ge/gw/api/ct/monetarypolicy/currencies/ka/json')
+    .then(res => res.json())
+    .then(data => {
+        const currencies = data[0].currencies;  
+        currencies.forEach(currency => {
+            const markup = `<option value="${currency.code}">${currency.code} - ${currency.rate}</option>`;
+            document.querySelector('select').insertAdjacentHTML('beforeend', markup);
+        });
+    })
+    .catch(error => console.log(error));
+
+
+
