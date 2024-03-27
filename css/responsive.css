@@ -1,3 +1,4 @@
+
 /* responsive design */
 
 @media (max-width: 768px) {
@@ -9,9 +10,11 @@
 	}
 
 	.nav-list {
-		position: absolute;
-		display: block;
-		flex-direction: column;
+		display: none;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		width: 30%;
 		margin-top: 40px;
 		margin-right: -250px;
@@ -27,16 +30,25 @@
 		display: block;
 		text-align: left;
 	}
-
+    .search-form{
+		display: none;
+	}
 	.container {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
 
 	.first-section-wrapper {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 	.card {
 		width: 90%;
@@ -48,7 +60,8 @@
 		margin-top: -90px;
 	}
 	.second-section-wrapper {
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		grid-gap: 10px;
 	}
 	.second-card {
@@ -62,9 +75,7 @@
 		padding-top: 10px;
 	}
 }
-.footer {
-	display: ;
-}
+
 
 /* Mobile styles */
 @media (max-width: 320px) {

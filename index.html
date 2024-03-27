@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="ბუღალტრული მომსახურები ვებგვერდი">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ბუღალტრული მომსახურება">
+    <meta name="author" content="nazi-iakobadze">
+    <meta property="og:title" content="Flex Accounting • ფლექს ექაუნთინგ">
+    <meta property="og:description" content="ჩვენ შესახებ">
+    <meta property="og:image" content="url(image/image.png)">
+    <meta property="og:url" content="https://www.facebook.com/flex.accountant">
+    <meta property="og:type" content="website">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
@@ -43,102 +51,98 @@
                         <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                         <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                         </svg></button>
-                  </div>
+                 </div> 
+                  <form  class="first-form" action="/search" method="get">
+                    <div class="search-form">
+                      <input  class="search" type="text" name="query" placeholder="ძებნა..." id="currencyInput" oninput="searchCurrencies()">
+                      <ul id="currencyList" class="dropdown-menu" style="display: none;"></ul>
+                     </div>
+                   </form>
           </div>
-        </div>
         </nav>
     </header>
   <!-------------------- first section  ------------------------->
 
-<section class="first-section" >
-    <div class="first-section-wrapper">
-        <div class="card">
-            <div class="card-image"></div>
-            <div class="card-content">
-              <h1>ბუღალტერია <br>& საგადასახადო კონსულტაცია</h1>
-              <div class="underline-part">
-              <div class="underline"></div>
-              <p>ჩვენ თქვენი საქმის საჭიროებიდან გამომდინარე, 
-                ვადგენთ თქვენს საქმეზე მორგებულ მომსახურებას, 
-                რაც იქნება გარანტი იმისა რომ  ზუსტად მიიღებთ იმას,
-                რაც თქვენ გჭირდებათ</p>
-              </div>
-           
-              <button onclick="findOutMore()">Find out more</button>
+        <section class="first-section" >
+            <div class="first-section-wrapper">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                      <h1>ბუღალტერია <br>& საგადასახადო კონსულტაცია</h1>
+                      <div class="underline-part">
+                      <div class="underline"></div>
+                      <p>ჩვენ თქვენი საქმის საჭიროებიდან გამომდინარე, 
+                        ვადგენთ თქვენს საქმეზე მორგებულ მომსახურებას, 
+                        რაც იქნება გარანტი იმისა რომ  ზუსტად მიიღებთ იმას,
+                        რაც თქვენ გჭირდებათ</p>
+                      </div>
+                      <button onclick="findOutMore()">Find out more</button>
+                    </div>
+                  </div>  
             </div>
-          </div>
-          
-    </div>
-</section>
+      </section>
 <!-------------------- second section  ------------------------->
 
-<section class="second-section" >
-    <div class="second-section-wrapper">
-      <div class="second-card">
-        <div class="second-card-content">
-          <h1 class="second-section-header-text">საგადასახადო კონსულტაცია</h1>
-          <div class="read-more-container">
-            <p class="second-section-text-p">
-              საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
-              საგადასახადო მხარეს და
-              დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.
-            </p>
-            
-            <button  class="readMore"onclick="readMore()">read more</button>
+      <section class="second-section" >
+          <div class="second-section-wrapper">
+            <div class="second-card">
+              <div class="second-card-content">
+                <h1 class="second-section-header-text">საგადასახადო კონსულტაცია</h1>
+                <div class="read-more-container">
+                  <p class="second-section-text-p">
+                    საგადასახადო ექსპერტთა გუნდი, შეამოწმებს თქვენი კომპანიის 
+                    საგადასახადო მხარეს და
+                    დაიცავს თქვენს ინტერესებს საგადასახადო ორგანოსთან.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="second-card">
+              <div class="second-card-content">
+                <h1 class="second-section-header-text">ბუღალტრული მომსახურება</h1>
+                <div class="read-more-container">
+                  <p class="second-section-text-p">
+                    ჩვენი საქმიანობაა სააღრიცხვო გადაწყვეტილება მივაწოდოთ
+                    თავის საქმეში წარმატების უნარის მქონე პირებს.
+                  </p>      
+                </div> 
+              </div>
+            </div>
+            <div class="second-card">
+              <div class="second-card-content">
+                <h1 class="second-section-header-text">ფინანსური რეპორტინგი</h1>
+                <div class="read-more-container">
+                  <p class="second-section-text-p">
+                    ფინანსური მენეჯმენტის მთავარი ამოცანაა შეამციროს ხარჯები 
+                    და გაზარდოს კომპანიის მომგებიანობა არსებული რესურსების პირობებში. 
+                  </p>        
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="second-card">
-        <div class="second-card-content">
-          <h1 class="second-section-header-text">ბუღალტრული მომსახურება</h1>
-          <div class="read-more-container">
-            <p class="second-section-text-p">
-              ჩვენი საქმიანობაა სააღრიცხვო გადაწყვეტილება მივაწოდოთ
-               თავის საქმეში წარმატების უნარის მქონე პირებს.
-            </p>
-            
-            <button  class="readMore"onclick="readMore()">read more</button>
-          </div> 
-        </div>
-      </div>
-
-      <div class="second-card">
-        <div class="second-card-content">
-          <h1 class="second-section-header-text">ფინანსური რეპორტინგი</h1>
-          <div class="read-more-container">
-            <p class="second-section-text-p">
-              ფინანსური მენეჯმენტის მთავარი ამოცანაა შეამციროს ხარჯები 
-              და გაზარდოს კომპანიის მომგებიანობა არსებული რესურსების პირობებში. 
-            </p>
-            
-            <button  class="readMore"onclick="readMore()">read more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+      </section>
 
 <!-------------------- button section  ------------------------->
-<section id="contact-form" class="footer-section">
-<div class="contact-container">
-    <h2>მოგვწერეთ</h2>
-    <form>
-      <input type="text" class="form-control" placeholder="სახელი *" required>
-      <input type="text" class="form-control" placeholder="გვარი *" required>
-      <input type="email" class="form-control" placeholder="მეილი *" required>
-      <textarea class="form-control" rows="4" placeholder="შეტყობინება" required></textarea>
-      <button type="submit" class="btn-submit">Submit</button>
-    </form>
-    <div class="footer">
-      <p>Address: თბილისი, ვაჟა–ფშაველას N23</p>
-      <p>ტელ: +995 599 24 86 02</p>
-      <p>Email:flex.accounting@gmail.com</p>
-      </div>
-  </div>
-</section>
-<script src="burger.js"></script>
-<script src="script.js"></script>
-</div>
+        <section id="contact-form" class="footer-section">
+        <div class="contact-container">
+            <h2>მოგვწერეთ</h2>
+            <form>
+              <input type="text" class="form-control" placeholder="სახელი *" required>
+              <input type="text" class="form-control" placeholder="გვარი *" required>
+              <input type="email" class="form-control" placeholder="მეილი *" required>
+              <textarea class="form-control" rows="4" placeholder="შეტყობინება" required></textarea>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <div class="footer">
+              <p>Address: თბილისი, ვაჟა–ფშაველას N23</p>
+              <p>ტელ: +995 599 24 86 02</p>
+              <p>Email:flex.accounting@gmail.com</p>
+            </div>
+          </div>
+        </section>
+   <script src="js/burger.js"></script>
+   <script src="js/script.js"></script>
+   <script src="/js/search.js"></script>
 </body>
+
 </html>
