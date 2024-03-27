@@ -7,12 +7,7 @@ body {
 	display: none;
 	background: none;
 }
-.container {
-	display: -ms-grid;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-gap: 10px;
-}
+
 .header-wrapper {
 	position: relative;
 	top: 0;
@@ -142,6 +137,7 @@ body {
 	font-weight: 600;
 	line-height: normal;
 }
+
 #currencies {
 margin: 10px 5px 0 0;
 }
@@ -300,8 +296,9 @@ button:hover {
 .footer-section {
 	background-color: #1e2a47;
 	font-family: "BPG Algeti Compact";
-	margin-top: 250px;NostalgiaBoldBPGAlgetiCompactBPGNostalgiaBoldBPGAlgetiCompactBPGAlgetiCompactBPGAlgetiCompactmargin-top
-	height: auto;heightheightheight
+	margin-top: 250px;
+	height: auto;
+}
 .contact-container {
 	max-width: 600px;
 	height: 60%;
@@ -365,4 +362,4 @@ h2 {
 .footer p {
 	color: #bbc0c4;
 }
-}
+
